@@ -1,76 +1,90 @@
-SQL-Python Mini Project: GDP Analysis
+# SQL-Python Mini Project: GDP Analysis
 
-Mini Project(SQL + Python + Visualizations)
+## Mini Project using SQL, Python, and Visualizations
 
-Overview
+---
 
-This project explores global economic and demographic trends using a dataset from The Economist's October 4th, 2023 article. I used SQL and Python to analyze GDP, population aging, labor force statistics, and regional contributions to global economic output.
+## Overview
+
+This project explores global economic and demographic trends using a dataset from The Economist (October 4th, 2023).  
+SQL and Python are used to analyze:
+
+- GDP and purchasing-power adjustments  
+- Population aging  
+- Labor force size  
+- Regional contributions to global GDP  
+
+---
+
+## Contents
 
 The notebook covers:
 
-Economic performance by country
+1. Economic performance by country  
+2. Demographic trends and their relationship to GDP per capita  
+3. Global and regional comparisons  
+4. Exploratory regression analysis  
 
-Demographic trends and their relation to GDP per capita
+---
 
-Global & regional comparisons
+## Data Source
 
-Exploratory regression models
+- **Kaggle Dataset:** The Economist: Global Economic Trends 2023  
+- Preprocessed CSV files for GDP, demographics, labor force, etc.
 
+---
 
-Data Source
+## Tools & Libraries
 
-Kaggle Dataset: "The Economist: Global Economic Trends 2023"
+- SQL (via `sqlite3` in Python)  
+- Pandas, NumPy  
+- Matplotlib, Seaborn, Plotly  
+- Scikit-learn (for regression modeling)  
 
-Preprocessed CSV files for GDP, labor force, demographics, etc.
+---
 
+## Key Questions Answered
 
-Tools & Libraries Used
+### Economic Performance
 
-SQL (via sqlite3 in Python)
+- Which countries had the highest GDP per capita in 2022?  
+- How do nominal GDP and PPP-adjusted GDP compare?  
+- How has GDP per capita evolved in the US, China, and India?
 
-Pandas & NumPy
+### Demographics & Labor
 
-Matplotlib / Seaborn / Plotly
+- Does an aging population correlate with wealth?  
+- Do top economies maintain low unemployment?
 
-Scikit-learn (for linear regression)
+### Global Comparisons
 
+- How has the global average GDP per capita changed over time?  
+- Which regions contribute the most to global GDP?
 
-Key Questions Answered
-Economic Performance
-Which countries had the highest GDP per capita in 2022?
+### Regression Analysis
 
-How do nominal GDP and PPP-adjusted GDP compare?
+- Can GDP or GDP per capita be predicted using labor force size and elderly population?  
+- What does a log-log regression reveal about demographic influence on wealth?
 
-How has GDP per capita evolved for countries like US, China, and India?
+---
 
-Demographics & Labor
-Does an aging population correlate with wealth?
+## Sample Visuals
 
-Do top economies also show low unemployment?
+- Line plots for GDP trends  
+- Scatter plots (e.g., GDP per capita vs. share of population over 65)  
+- Treemap of global GDP by region  
+- Regression plots with log transforms  
 
-Global Comparisons
-How has the global average GDP per capita changed over time?
+---
 
-Which regions contribute the most to global GDP?
+## Final Insight
 
-Regression Analysis
-Can GDP or GDP per capita be predicted using labor force size and elderly population?
+This analysis demonstrates that:
 
-What does a log-log regression tell us about demographic influence on wealth?
+- Total GDP scales closely with labor force size.  
+- GDP per capita is not strongly predicted by labor force size alone but shows a positive relationship with the share of the population aged 65 and over.  
+- Developed countries tend to have older populations and higher productivity.  
+- Demographic factors explain part of the variation in GDP per capita (R² ≈ 0.45), but other economic and institutional variables also play key roles.
 
-Sample Visuals
-Plots include:
+Overall, this project combines SQL querying, Python-based visualization, and regression modeling to provide a concise view of economic and demographic patterns worldwide.
 
-GDP trends (line plots)
-
-GDP per capita vs elderly population (scatter)
-
-Global GDP growth over time
-
-Treemap of regional GDP shares
-
-Regression plots with log transforms
-
-
-Final Insight
-This project explored global economic patterns through GDP, PPP adjustments, and demographic indicators like labor force size and elderly population. High-income countries like Luxembourg and Singapore show strong economic performance and low unemployment. Regression analysis revealed that while total GDP is closely linked to labor force size, GDP per capita depends more on structural factors—older populations tend to indicate wealthier, more developed nations. Though demographic indicators explain part of the variation, economic productivity is influenced by many other factors beyond population. The analysis blends visual, SQL, and statistical insights to offer a well-rounded picture of global development trends.
