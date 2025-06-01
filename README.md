@@ -1,90 +1,38 @@
-# SQL-Python Mini Project: GDP Analysis
+# GDP & Productivity Analysis
 
-## Mini Project using SQL, Python, and Visualizations
+Analysis of global productivity trends using The Economist's GDP dataset (1980-2022), revealing the relationship between national wealth, working hours, and economic efficiency.
 
----
+## Key Findings
 
-## Overview
+- **Productivity > Demographics**: Productivity metrics explain 98.3% of GDP variation vs. 44.6% for demographics alone
+- **Work-Wealth Paradox**: Strong negative correlation (-0.55) between GDP per capita and hours worked
+- **Efficiency Wins**: Norway achieves $138K per 1000 hours while Colombia works 2,405 hours annually with low productivity
 
-This project explores global economic and demographic trends using a dataset from The Economist (October 4th, 2023).  
-SQL and Python are used to analyze:
+## Dataset
 
-- GDP and purchasing-power adjustments  
-- Population aging  
-- Labor force size  
-- Regional contributions to global GDP  
+**Source**: The Economist, October 2023  
+**Size**: 11,560 observations, 27 variables  
+**Period**: 1980-2022
 
----
+## Tech Stack
 
-## Contents
+Python, Pandas, Matplotlib, Seaborn, Plotly, SQLite, Scikit-learn
+* Download `gdp_over_hours_worked.csv`
+* Run notebook cells sequentially
+* Visualizations saved to `visuals/` folder
 
-The notebook covers:
+## Main Research Areas
 
-1. Economic performance by country  
-2. Demographic trends and their relationship to GDP per capita  
-3. Global and regional comparisons  
-4. Exploratory regression analysis  
+1. **Global Economic Landscape** - GDP rankings and trends
+2. **Productivity Paradox** - Working hours vs. economic output
+3. **Labor Markets** - Unemployment patterns in wealthy nations
+4. **Regional Analysis** - GDP distribution by continent
+5. **Predictive Modeling** - Demographics vs. productivity factors
 
----
+## Core Insight
 
-## Data Source
-
-- **Kaggle Dataset:** The Economist: Global Economic Trends 2023  
-- Preprocessed CSV files for GDP, demographics, labor force, etc.
-
----
-
-## Tools & Libraries
-
-- SQL (via `sqlite3` in Python)  
-- Pandas, NumPy  
-- Matplotlib, Seaborn, Plotly  
-- Scikit-learn (for regression modeling)  
+Countries that work smarter, not harder, achieve higher prosperity. The global economy increasingly rewards efficiency over effort - a fundamental shift in how wealth is created.
 
 ---
 
-## Key Questions Answered
-
-### Economic Performance
-
-- Which countries had the highest GDP per capita in 2022?  
-- How do nominal GDP and PPP-adjusted GDP compare?  
-- How has GDP per capita evolved in the US, China, and India?
-
-### Demographics & Labor
-
-- Does an aging population correlate with wealth?  
-- Do top economies maintain low unemployment?
-
-### Global Comparisons
-
-- How has the global average GDP per capita changed over time?  
-- Which regions contribute the most to global GDP?
-
-### Regression Analysis
-
-- Can GDP or GDP per capita be predicted using labor force size and elderly population?  
-- What does a log-log regression reveal about demographic influence on wealth?
-
----
-
-## Sample Visuals
-
-- Line plots for GDP trends  
-- Scatter plots (e.g., GDP per capita vs. share of population over 65)  
-- Treemap of global GDP by region  
-- Regression plots with log transforms  
-
----
-
-## Final Insight
-
-This analysis demonstrates that:
-
-- Total GDP scales closely with labor force size.  
-- GDP per capita is not strongly predicted by labor force size alone but shows a positive relationship with the share of the population aged 65 and over.  
-- Developed countries tend to have older populations and higher productivity.  
-- Demographic factors explain part of the variation in GDP per capita (R² ≈ 0.45), but other economic and institutional variables also play key roles.
-
-Overall, this project combines SQL querying, Python-based visualization, and regression modeling to provide a concise view of economic and demographic patterns worldwide.
-
+*Analysis reveals that national wealth stems from productivity per hour, not total hours worked.*
